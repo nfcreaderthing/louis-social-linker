@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#080910" />
+    <meta name="theme-color" content="#050505" />
     <meta
       name="description"
-      content="Connect with Louis on Facebook and Instagram."
+      content="Connect through Facebook and Instagram."
     />
-    <title>Louis · Social Links</title>
+    <title>Social Links</title>
     <style>
       :root {
-        --bg: #080910;
-        --panel: rgba(16, 17, 29, 0.8);
-        --line: rgba(255, 255, 255, 0.13);
-        --muted: #9a9bab;
-        --text: #f8f8ff;
-        --cyan: #53f5ff;
-        --pink: #ff4fd8;
-        --purple: #8e5cff;
+        --bg: #050505;
+        --panel: rgba(10, 10, 10, 0.88);
+        --line: rgba(255, 255, 255, 0.18);
+        --muted: #a5a5a5;
+        --text: #f7f7f7;
+        --red: #e50914;
+        --red-bright: #ff2430;
+        --white: #f5f5f5;
       }
 
       * {
@@ -39,9 +39,10 @@
           Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
           "Segoe UI", sans-serif;
         background:
-          radial-gradient(circle at 10% 8%, rgba(142, 92, 255, 0.22), transparent 27rem),
-          radial-gradient(circle at 90% 10%, rgba(255, 79, 216, 0.15), transparent 24rem),
-          radial-gradient(circle at 50% 100%, rgba(83, 245, 255, 0.11), transparent 30rem),
+          radial-gradient(circle at 50% -10%, rgba(229, 9, 20, 0.26), transparent 23rem),
+          radial-gradient(circle at 90% 86%, rgba(229, 9, 20, 0.12), transparent 25rem),
+          repeating-linear-gradient(126deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 13px),
+          repeating-linear-gradient(42deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 19px),
           var(--bg);
       }
 
@@ -61,13 +62,13 @@
       body::before {
         top: 28%;
         left: -18rem;
-        background: var(--cyan);
+        background: var(--red);
       }
 
       body::after {
         right: -18rem;
         bottom: 6%;
-        background: var(--pink);
+        background: #8b0000;
       }
 
       .shell {
@@ -110,7 +111,7 @@
         overflow: hidden;
         border: 1px solid rgba(83, 245, 255, 0.18);
         border-radius: 999px;
-        background: rgba(255, 255, 255, 0.04);
+        background: rgba(255, 255, 255, 0.06);
       }
 
       .signal::before {
@@ -120,9 +121,9 @@
         width: 4px;
         height: 7px;
         border-radius: 2px;
-        background: var(--cyan);
-        box-shadow: 8px 0 0 var(--purple), 16px 0 0 var(--pink),
-          24px 0 0 var(--cyan), 32px 0 0 var(--purple);
+        background: var(--red-bright);
+        box-shadow: 8px 0 0 var(--white), 16px 0 0 var(--red),
+          24px 0 0 var(--white), 32px 0 0 var(--red);
         content: "";
         transform: translateY(-50%);
       }
@@ -131,10 +132,10 @@
         position: relative;
         overflow: hidden;
         padding: clamp(30px, 7vw, 58px) clamp(20px, 6vw, 54px) 25px;
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
         background:
-          linear-gradient(145deg, rgba(255, 255, 255, 0.06), transparent 30%),
+          linear-gradient(145deg, rgba(255, 255, 255, 0.09), transparent 30%),
           var(--panel);
         box-shadow:
           0 30px 100px rgba(0, 0, 0, 0.38),
@@ -152,8 +153,8 @@
         background: linear-gradient(
           90deg,
           transparent,
-          rgba(83, 245, 255, 0.15),
-          rgba(255, 79, 216, 0.17),
+          rgba(255, 255, 255, 0.13),
+          rgba(229, 9, 20, 0.28),
           transparent
         );
         content: "";
@@ -176,11 +177,11 @@
         place-items: center;
         border: 1px solid rgba(255, 255, 255, 0.42);
         border-radius: 50%;
-        background: linear-gradient(140deg, var(--cyan), var(--purple) 52%, var(--pink));
+        background: linear-gradient(140deg, #2a2a2a, #050505 52%, var(--red));
         box-shadow:
-          0 0 0 7px rgba(83, 245, 255, 0.09),
-          0 0 35px rgba(83, 245, 255, 0.38),
-          0 0 62px rgba(255, 79, 216, 0.22);
+          0 0 0 7px rgba(229, 9, 20, 0.1),
+          0 0 35px rgba(229, 9, 20, 0.28),
+          0 0 62px rgba(0, 0, 0, 0.44);
       }
 
       .avatar::before {
@@ -200,7 +201,7 @@
 
       .eyebrow {
         margin: 0 0 10px;
-        color: var(--cyan);
+        color: var(--red-bright);
         font-size: 0.72rem;
         font-weight: 900;
         letter-spacing: 0.2em;
@@ -218,7 +219,7 @@
       h1 span {
         display: block;
         color: transparent;
-        background: linear-gradient(95deg, var(--cyan), #fff 44%, var(--pink));
+        background: linear-gradient(95deg, #fff, var(--red-bright) 58%, #8b0000);
         background-clip: text;
         -webkit-background-clip: text;
       }
@@ -260,11 +261,11 @@
 
       .link-button:hover,
       .link-button:focus-visible {
-        border-color: rgba(83, 245, 255, 0.58);
-        background: rgba(83, 245, 255, 0.1);
+        border-color: rgba(229, 9, 20, 0.76);
+        background: rgba(229, 9, 20, 0.1);
         box-shadow:
           0 12px 30px rgba(0, 0, 0, 0.25),
-          0 0 30px rgba(83, 245, 255, 0.12);
+          0 0 30px rgba(229, 9, 20, 0.18);
         outline: none;
         transform: translateY(-3px);
       }
@@ -279,13 +280,13 @@
       }
 
       .icon.facebook {
-        background: linear-gradient(140deg, #58a8ff, #1877f2);
+        background: linear-gradient(140deg, #303030, #0b0b0b);
         box-shadow: 0 0 20px rgba(24, 119, 242, 0.34);
       }
 
       .icon.instagram {
-        background: linear-gradient(140deg, #ffd36b, #ff4f9a 47%, #8e5cff);
-        box-shadow: 0 0 20px rgba(255, 79, 216, 0.3);
+        background: linear-gradient(140deg, #f5f5f5, #777 47%, #111);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
       }
 
       .icon svg {
@@ -336,14 +337,14 @@
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background: var(--pink);
-        box-shadow: 0 0 10px var(--pink);
+        background: var(--red-bright);
+        box-shadow: 0 0 10px var(--red-bright);
         content: "";
       }
 
       footer {
         padding-top: 18px;
-        color: rgba(154, 155, 171, 0.64);
+        color: rgba(190, 190, 190, 0.64);
         font-size: 0.7rem;
         text-align: center;
       }
@@ -355,7 +356,7 @@
         }
 
         .card {
-          border-radius: 24px;
+          border-radius: 5px;
         }
       }
 
@@ -378,11 +379,11 @@
 
       <section class="card" aria-labelledby="profile-name">
         <div class="profile">
-          <div class="avatar" aria-hidden="true"><span>LM</span></div>
-          <p class="eyebrow">Connect with me</p>
-          <h1 id="profile-name">Louis <span>Online.</span></h1>
+          <div class="avatar" aria-hidden="true"><span>✦</span></div>
+          <p class="eyebrow">Social links</p>
+          <h1 id="profile-name">Stay <span>Connected.</span></h1>
           <p class="bio">
-            One place for updates, conversations, and everything I’m sharing next.
+            One place for the links that matter.
           </p>
         </div>
 
